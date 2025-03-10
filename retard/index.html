@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>You Retard</title>
+    <link rel="stylesheet" href="./output.css" />
+    <script defer src="./script.js"></script>
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .hidden{
+        display: none;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-600 text-white">
+    <div class="question flex-col text-center justify-items-center mx-auto w-[80vw]">
+      <h1 class="my-5 text-4xl font-mono" >Are you Retard?</h1>
+      <div class="flex flex-col font-mono m-5 gap-3">
+        <button class="px-5 py-1 hover:bg-black border text-white rounded hover:cursor-pointer active:scale-95" id="yesBtn">Yes</button>
+        <button class="px-5 py-1 hover:bg-black border text-white rounded hover:cursor-pointer active:scale-95" id="noBtn">No</button>
+      </div>
+    </div>
+    
+    <div class="yes my-10 hidden flex-col text-center justify-items-center mx-auto w-[80vw]">
+      <video class="md:w-[50%] rounded" src="./assets/PABLO.mp4" id="yesVdo"></video>
+      <p class="text-xl font-mono m-5">Damn, finally some self-awareness. Proud of you.</p>
+    </div>
+
+    <div class="no my-10  hidden flex-col text-center justify-items-center mx-auto w-[80vw]">
+      <video class="md:w-[50%] rounded" src="./assets/PABLO.mp4" id="noVdo"></video>
+      <p class="text-xl font-mono m-5">That’s exactly what a retard would say.</p>
+    </div>
+  </body>
+</html>
