@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WatchExpense</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="./script.js"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-slate-950 text-white Montserrat">
+    <div class="md:w-[30vw] w-[97vw] md:mt-10 mt-4 pb-5 m-auto">
+      <div class="heading mb-5 text-center">
+        <h1 class="text-2xl font-bold">
+          <span>Watch</span><span class="text-green-400">Expense.</span>
+        </h1>
+      </div>
+
+      <div class="card bg-white text p-4 rounded-2xl">
+        <div class="balance bg-[#9822af] rounded-2xl p-4">
+          <div class="uppertxt text-center">
+            <h5 class="font-bold text-sm">TOTAL BALANCE</h5>
+            <span id="balance" class="text-4xl font-bold">₹0</span>
+          </div>
+
+          <div class="ie md:mx-10 flex justify-between p-4 text-center">
+            <div class="i">
+              <h5 class="font-bold text-sm">INCOME</h5>
+              <span id="income" class="text-2xl font-bold">+₹0</span>
+            </div>
+            <div class="e">
+              <h5 class="font-bold text-sm">EXPENSE</h5>
+              <span id="expense" class="text-2xl font-bold">-₹0</span>
+            </div>
+          </div>
+        </div>
+
+        <section class="text-black mt-3">
+          <h3 class="font-medium text-xl">Transactions</h3>
+          <div id="no-transaction" class="status text-center mb-2">
+            No Transactions
+          </div>
+          <ul id="transaction-list" class="text-black mt-3"></ul>
+        </section>
+
+        <section class="text-black mt-3">
+          <h3 class="font-medium text-xl">Add Transaction</h3>
+
+          <div
+            class="mx-2 flex justify-between md:px-20 px-10 mt-4 py-1 rounded bg-gray-200 text-sm font-medium"
+          >
+            <button
+              id="exp"
+              onclick="expenseToggle()"
+              class="hover:bg-white px-3 py-1 rounded hover:cursor-pointer"
+            >
+              EXPENSE
+            </button>
+            <button
+              id="inc"
+              onclick="incomeToggle()"
+              class="hover:bg-white px-3 py-1 rounded hover:cursor-pointer"
+            >
+              INCOME
+            </button>
+          </div>
+        </section>
+
+        <form id="transaction-form">
+          <section class="pt-3">
+            <label for="tnx-name" class="text-black font-medium mb-0"
+              >Transaction Name</label
+            >
+            <input
+              id="tnx-name"
+              type="text"
+              required
+              class="py-2 pl-2 w-[100%] text-black my-2 border border-gray-300 rounded"
+            />
+          </section>
+
+          <section class="flex items-center text-black font-medium mb-0">
+            <div class="amt">
+              <label for="amt">Amount</label>
+              <input
+                type="number"
+                id="amt"
+                required
+                class="w-[90%] py-2 pl-2 text-black my-2 border border-gray-300 rounded"
+              />
+            </div>
+            <div class="date">
+              <label for="date">Date</label>
+              <input
+                type="date"
+                id="date"
+                required
+                class="md:w-[100%] py-2 px-2 text-black my-2 border border-gray-300 rounded"
+              />
+            </div>
+          </section>
+
+          <section class="flex flex-col">
+            <button
+              type="button"
+              onclick="submitBtn()"
+              class="bg-[#9822af] m-1 py-2 rounded font-medium text-sm active:scale-99 hover:cursor-pointer"
+            >
+              SUBMIT
+            </button>
+            <button
+              type="button"
+              onclick="clearBtn()"
+              class="bg-[#9822af] m-1 py-2 rounded font-medium text-sm active:scale-99 hover:cursor-pointer"
+            >
+              CLEAR
+            </button>
+          </section>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
