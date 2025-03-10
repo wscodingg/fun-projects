@@ -1,0 +1,53 @@
+
+video{
+    height: 480px;
+    width: 720px;
+    display: none;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container button{
+    padding: 14px;
+    font-family: "Roboto Mono", serif;
+    font-size: 1.2em;
+    margin-top: 100px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    transition: transform 0.2s ease;
+}
+
+button:active{
+    transform: scale(0.96);
+}
+
+p{
+    display: none;
+    font-size: 1.4em;
+}
+
+#getSomeHelp{
+    display: none;
+}
+
+@media (max-width: 768px){
+    video{
+        margin-top: 100px;
+        height: 220px;
+        width: auto;
+    }
+
+    #getSomeHelp{
+        margin-top: 100px;
+        height: 220px;
+        width: auto;
+    }
+}
