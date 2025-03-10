@@ -1,0 +1,245 @@
+body{
+    margin: 0;
+    background-color: #247f4f;
+    font-family: "JetBrains Mono", serif;
+}
+
+.navbar{
+    width: 80vw;
+    margin: auto;
+    height: 14vh;
+    display: flex;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+
+span{
+    font-weight: 900;
+    font-size: xx-large;
+}
+
+p{
+    margin: 0;
+    font-size: small;
+}
+.navbar-image img{
+    width: 60px;
+    border-radius: 50%;
+    margin: 0;
+}
+
+
+.navbar-txt{
+    margin-left: 15px;
+    color: white;
+}
+
+.container{
+    height: 70vh;
+    width: 80vw;
+    margin: auto;
+    margin-top: 0;
+    background-color: #e8eef2;
+    border-radius: 15px;
+}
+
+.list ul{
+    display: flex;
+    gap: 5px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.hidden{
+    display: none !important;
+}
+
+.list ul li{
+    text-decoration: none;
+    color: white;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+}
+
+.list ul li:hover{
+    cursor: pointer;
+}
+
+.selected{
+    cursor: pointer;
+    background-color: #e8eef2;
+    color: black !important; 
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;   
+}
+
+
+
+
+
+/* Url container */
+
+.urlContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    width: 88%;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border: none;
+}
+
+
+input[type="url"] {
+    font-family: "JetBrains Mono", sans-serif;
+    font-weight: 300;
+    font-size: 0.8em;
+}
+
+input:focus{
+    outline: none;
+    border-bottom: 1.8px solid skyblue;
+}
+
+
+label{
+    width: 90%;
+    margin: auto;
+    font-weight: 200;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+.qrcode{
+    margin: auto;
+}
+
+
+img{
+    margin-top: 40px;
+}
+
+
+
+.button{
+    margin: auto;
+    margin-top: 50px;
+}
+
+
+button{
+    font-family: "JetBrains Mono", serif;
+    padding: 10px;
+}
+
+
+button:active{
+    transform: scale(0.96);
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+
+.downloadBtn{
+    margin: auto;
+    margin-top: 50px;
+}
+
+
+
+/* vCard Container */
+
+.data{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#fname{
+    font-family: "JetBrains Mono", sans-serif;
+    font-weight: 300;
+    font-size: 0.8em;
+}
+
+#mobileNum{
+    font-family: "JetBrains Mono", sans-serif;
+    font-weight: 300;
+    font-size: 0.8em;
+}
+
+#email{
+    font-family: "JetBrains Mono", sans-serif;
+    font-weight: 300;
+    font-size: 0.8em;
+}
+
+.qrcodev{
+    margin: auto;
+}
+
+
+.qrcodev img{
+    width: 120px;
+}
+
+
+.buttonV{
+    margin: auto;
+    margin-top: 50px;
+}
+
+.downloadBtnV{
+    margin: auto;
+    margin-top: 50px;
+}
+
+.qrcodev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .container{
+        width: 87vw;
+        height: 60vh;
+    }
+
+    .qrcode{
+        margin-top: 50px;
+    }
+}
+
+
+@media (max-device-width: 500px){
+    .container{
+        height: 70vh;
+    }
+
+    .qrcode{
+        margin-top: 50px;
+    }
+
+    .button{
+        margin-top: 30px;
+    }
+
+    canvas{
+        margin-top: 15px;
+        width: 120px;
+    }
+
+    
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">readme style todo</div>
+
+      <div class="inputDiv">
+        <input
+          class="inputTask"
+          type="text"
+          placeholder="new task"
+          id="inputele"
+        />
+        <button id="addBtn">ADD</button>
+      </div>
+
+      <div id="dynamicParagraph"></div>
+
+      <p id="taskCount"></p>
+      <a id="clearAll" onclick="clearAll()" class="clearFunc hidden"
+        >Clear all</a
+      >
+    </div>
+  </body>
+</html>

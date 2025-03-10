@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ipdf</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="">
+    <link rel="icon" href="./favicon.png">
+
+    <script defer type="module" src="./script.js"></script>
+</head>
+<body>
+    <div class="container">
+
+        <div class="drop-zone">
+            <h2 style="margin: 0; padding: 0;">images to pdf</h2>
+            <p>drag your images here or click to upload</p>
+            <input type="file" id="file-input" accept="image/*" multiple />
+        </div>
+
+
+        <div id="preview"></div>
+        <button id="generate-pdf">generate</button>
+    </div>
+
+    <div class="container1">
+        <h1>File Conversion</h1>
+
+        <p>Choose a file type to convert</p>
+        <select name="fileFormat" id="fileFormat">
+            <option value="epub">EPUB</option>
+            <option value="docx">DOCX</option>
+            <option value="mobi">MOBI</option>
+        </select>
+        <button id="submitBtn">Submit</button>
+    </div>
+
+
+
+    <div class="epub hidden">
+        <h2>convert epub to pdf</h2>
+        <input type="file" id="fileInputEpub" accept=".epub">
+        <button id="convertBtnEpub">Convert</button>
+    </div>
+
+
+    <div class="docx hidden">
+        <h2>convert docx to pdf</h2>
+        <input type="file" id="fileInputDocx" accept=".docx">
+        <button id="convertBtnDocx">Convert</button>
+    </div>
+
+    <div class="mobi hidden">
+        <h2>convert mobi to pdf</h2>
+        <input type="file" id="fileInputMobi" accept=".mobi">
+        <button id="convertBtnMobi">Convert</button>
+    </div>
+
+
+</body>
+</html>
